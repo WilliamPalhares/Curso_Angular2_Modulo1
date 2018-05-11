@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module';
 
 @NgModule({
-    imports: [ BrowserModule ],
+    imports: [ BrowserModule, FotoModule ],
     declarations: [ AppComponent ],
     bootstrap: [ AppComponent ]
 })

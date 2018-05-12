@@ -10,9 +10,11 @@ import { HttpModule } from '@angular/http';                 //Importando a bibli
 
 import 'rxjs/add/operator/map';
 
+import { PainelModule } from './painel/painel.module';
+
 //Decorator -> Esse é o decoretor do Modulo da aplicação
 @NgModule({
-    imports: [ BrowserModule, FotoModule, HttpModule ],     //Isso indica que um módulo anotado com 
+    imports: [ BrowserModule, FotoModule, HttpModule, PainelModule ],     //Isso indica que um módulo anotado com 
                                                             //ngModule pode importar outros módulos 
                                                             //também anotados com ngModule.
 

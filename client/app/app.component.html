@@ -2,7 +2,11 @@
     <h1 class="text-center">Alura</h1>
 </div>
 <div class="container">
-    <!--para cada item da nossa lista de fotos, usamos a diretiva ngFor -->
-    <!--do Angular. Atenção, veja que ela começa com *-->
-    <foto *ngFor="let foto of fotos" url="{{foto.url}}" titulo="{{foto.titulo}}"></foto>
+    <div class="row" class="col-xs-2">
+        <painel *ngFor="let foto of fotos" titulo={{foto.titulo}}>
+            <!--para cada item da nossa lista de fotos, usamos a diretiva ngFor -->
+            <!--do Angular. Atenção, veja que ela começa com *-->
+            <foto  url="{{foto.url}}" titulo="{{foto.titulo}}"></foto>
+        </painel>
+    </div>
 </div>

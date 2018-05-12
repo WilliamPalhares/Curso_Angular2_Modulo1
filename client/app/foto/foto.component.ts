@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';           //Importando a bibli
 //esse decorator vem do import do Component do angular core
 @Component({
       selector: 'foto',                         //Nome do seu seletor html ex: <foto></foto>
-      moduleId: module.id,                      
+      moduleId: module.id,                      //Faz com que o componente procure o template relativo à sua pasta.
       templateUrl: './foto.component.html'      //Caminho do template utilizado pelo componente
 })
 

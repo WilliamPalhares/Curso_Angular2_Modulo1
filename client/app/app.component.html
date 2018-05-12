@@ -2,6 +2,7 @@
     <h1 class="text-center">Alura</h1>
 </div>
 <div class="container">
-    <foto url="img/leao.jpg" titulo="Leão"></foto>
-    <foto url="img/leao-branco.jpg" titulo="Leão Branco"></foto>
+    <!--para cada item da nossa lista de fotos, usamos a diretiva ngFor -->
+    <!--do Angular. Atenção, veja que ela começa com *-->
+    <foto *ngFor="let foto of fotos" url="{{foto.url}}" titulo="{{foto.titulo}}"></foto>
 </div>

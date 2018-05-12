@@ -6,8 +6,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';             //Importando a Componente
 import { FotoModule } from './foto/foto.module';            //Importando o modulo de foto
-
 import { HttpModule } from '@angular/http';                 //Importando a biblioteca de Requisições
+
+import 'rxjs/add/operator/map';
 
 //Decorator -> Esse é o decoretor do Modulo da aplicação
 @NgModule({

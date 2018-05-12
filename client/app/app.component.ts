@@ -4,7 +4,7 @@ import { Http } from '@angular/http';       //Importando a biblioteca Angular Ht
 //Decorator => Utilizando como uma anotação da classe
 //esse decorator vem do import do Component do angular core
 @Component({
-    moduleId: module.id,                    //
+    moduleId: module.id,                    //Faz com que o componente procure o template relativo à sua pasta.
     selector: 'app',                        //Nome do seu seletor html ex: <app></app>
     templateUrl: './app.component.html'     //Caminho do template utilizado pelo componente
 })

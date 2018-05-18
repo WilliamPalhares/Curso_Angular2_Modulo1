@@ -4,9 +4,13 @@ import { NgModule } from '@angular/core';                   //Importando a bibli
 //padrões do Angular sem termos que importar cada recurso individualmente como as diretivas
 import { BrowserModule } from '@angular/platform-browser';  
 
-import { AppComponent } from './app.component';             //Importando a Componente
-import { FotoModule } from './foto/foto.module';            //Importando o modulo de foto
-import { HttpModule } from '@angular/http';                 //Importando a biblioteca de Requisições
+import { AppComponent } from './app.component';                     //Importando a Componente
+import { CadastroComponent } from './cadastro/cadastro.component';  //Importando o Cadastro
+import { ListagemComponent } from './listagem/listagem.component';  //Importando a Listagem
+import { FotoModule } from './foto/foto.module';                    //Importando o modulo de foto
+import { HttpModule } from '@angular/http';                         //Importando a biblioteca de Requisições
+
+import { routing } from './app.routes';
 
 import 'rxjs/add/operator/map';
 
@@ -14,11 +18,14 @@ import { PainelModule } from './painel/painel.module';
 
 //Decorator -> Esse é o decoretor do Modulo da aplicação
 @NgModule({
-    imports: [ BrowserModule, FotoModule, HttpModule, PainelModule ],     //Isso indica que um módulo anotado com 
-                                                            //ngModule pode importar outros módulos 
-                                                            //também anotados com ngModule.
-
-    declarations: [ AppComponent ],                         //Todos os componentes que fizerem parte do módulo, 
+    imports: [ BrowserModule, 	//Isso indica que um módulo anotado com
+               FotoModule, 		//ngModule pode importar outros módulos
+               HttpModule, 		//também anotados com ngModule.
+               routing,										
+               PainelModule ],     							
+                            
+    declarations: [ AppComponent, CadastroComponent, ListagemComponent ],                         
+                                                            //Todos os componentes que fizerem parte do módulo, 
                                                             //precisam ser registrados.
 
     bootstrap: [ AppComponent ]                             //vamos importar nosso componente e 

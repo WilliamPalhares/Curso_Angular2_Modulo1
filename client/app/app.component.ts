@@ -12,27 +12,5 @@ import { Http } from '@angular/http';       //Importando a biblioteca Angular Ht
 //Export - Só temos acesso a classes ou qualquer outro 
 //artefato dentro de um módulo do ES6 se utilizarmos a sintaxe export
 export class AppComponent {
-    //Criando uma lista de objetos.
-    fotos: Object[] = [];
-
-    //TypeScript Para tipar uma variavel colocar : e o seu tipo
-    //Ex: let nome: string
-    //Com isso estou utilizando a Injeção de Dependencia
-    constructor (http: Http) {
-        //Realizando um Get para obter a lista de fotos
-        //Seu retorno é um tipo observable stream
-        http.get('v1/fotos')
-
-        //Realizo a conversão do objeto atraves do Map
-        //Trato a resposta da requisição aqui
-        .map(res => res.json())
-        
-        //Sobrescrever o retorno da função
-        .subscribe(fotos => {
-            //atribuo a lista de fotos em formato Json
-            this.fotos = fotos;
-        }, 
-        //Apresentando o erro na console
-        error => console.log(error));
-    }
+    
 }

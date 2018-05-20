@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';                   //Importando a biblioteca Angular Core
+import { FormsModule } from '@angular/forms'
 
 //Importando a biblioteca Angular Core, BrowserModule ao ser carregado, já disponibiliza diversos recursos 
 //padrões do Angular sem termos que importar cada recurso individualmente como as diretivas
@@ -21,7 +22,8 @@ import { PainelModule } from './painel/painel.module';
     imports: [ BrowserModule, 	//Isso indica que um módulo anotado com
                FotoModule, 		//ngModule pode importar outros módulos
                HttpModule, 		//também anotados com ngModule.
-               routing,										
+               routing,	
+               FormsModule,									
                PainelModule ],     							
                             
     declarations: [ AppComponent, CadastroComponent, ListagemComponent ],                         

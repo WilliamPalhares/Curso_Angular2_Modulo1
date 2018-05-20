@@ -6547,3 +6547,5 @@ client/app/painel/painel.component.js
 client/app/painel/painel.component.js.map
 client/app/painel/painel.module.js.map
 server/data.db
+client/app/foto/foto.pipes.js.map
+client/app/foto/foto.pipes.js

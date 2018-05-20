@@ -11,6 +11,7 @@ import { Component, Input } from '@angular/core';           //Importando a bibli
 //Export - Só temos acesso a classes ou qualquer outro 
 //artefato dentro de um módulo do ES6 se utilizarmos a sintaxe export
 export class FotoComponent {
-      @Input() url;         //Parametro de entrada de dados atraves do atributo <foto url={{url}}></foto>
-      @Input() titulo;      //Parametro de entrada de dados atraves do atributo <foto titulo={{titulo}}></foto>
+      @Input() url : string;         //Parametro de entrada de dados atraves do atributo <foto url={{url}}></foto>
+      @Input() titulo: string;      //Parametro de entrada de dados atraves do atributo <foto titulo={{titulo}}></foto>
+      descricao: string;
 }
